@@ -1,5 +1,9 @@
 A collection of scripts I use in my PC setup when booted into Windows.
 
+# AutoHotKey
+
+Within Windows AutoHotKey is a great tool for automating different actions. Many of my scripts for Windows use AHK for function and trigger, so if using these please ensure you have AHK 1.1.x installed (https://www.autohotkey.com/download/). AutoHotKey scripts are easily distinguished by the `.ahk` filetype. 
+
 # Windows Tiling
 
 - Scripts to arrange active windows into a tiled layout.
