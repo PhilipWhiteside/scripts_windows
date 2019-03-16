@@ -42,4 +42,23 @@ TileActiveWindow(
                                1---end in row 0
 ```
 
+# Outlook to Moo.do
 
+- There is no integration between these two applications.
+- The goal is to automate the input of Outlook emails to actions in Moo.do.
+- Outlook does not support linking in, so Email Subject will be used as reference.
+
+When in Outlook reading the email you wish to add as a task, run the hotkey. The hotkey is scoped to only Outlook (ahk_exe OUTLOOK.EXE). 
+
+The hotkey will run the following process of steps:
+
+1. Copy email info from Outlook (of active email conversation)
+2. Strip out common headings (headings of email list are also copied)
+    - Subject, From, Recieved, Categories
+3. Switch to Moo.do window (currently needs to be already open)
+4. Add new item, filling in details, leaving user to enter Task title
+    - Project `Email Inbox` is default, but can be changed in the AHK or Moo.do UI for one-offs
+    - Email info is entered into Notes field
+5. User saves
+
+Hotkey: Ctrl+Shift+1
